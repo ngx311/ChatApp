@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:background="@color/white">
+
+    <!-- Friend Emoji -->
+    <ImageView
+        android:id="@+id/friend_emoji"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/friends"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Search Bar -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/friend_emoji"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:hint="Search"
+            android:background="@drawable/search_box_background"
+            android:textColor="@android:color/darker_gray"
+            android:padding="8dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Pending Requests Section -->
+    <TextView
+        android:id="@+id/pendingRequestsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView"
+        android:text="Pending Friend Requests"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pendingRequestsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pendingRequestsTextView"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_request"/>
+
+    <RelativeLayout
+        android:id="@+id/hide_pending"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/pendingRequestsRecyclerView">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hide_pending_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundTint="#ededed"
+            app:icon="@drawable/hide_request_button"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            app:iconTint="@null"
+            app:elevation="8dp"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hide_pending"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingTop="8dp" />
+
+</RelativeLayout>

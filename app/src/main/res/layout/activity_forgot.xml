@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/sortreeBlue"
+    tools:context="com.example.thiago.chatapp.SignUpActivity">
+
+    <ImageView
+        android:layout_width="299dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/whitelogo"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/btnForgot2"
+        android:src="@drawable/emoji_logo3" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAssertive"
+        android:textColor="@android:color/white"
+        android:text="@string/request_password"
+        android:textSize="26dp"
+        android:id="@+id/btnForgot2"
+        android:layout_below="@+id/editText"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:text="@string/request_password2"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

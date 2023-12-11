@@ -1,0 +1,5 @@
+<!-- mode_indicator.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/mode_indicator_color"/>
+    <corners android:radius="8dp"/>
+</shape>

@@ -1,0 +1,5 @@
+<!-- exposure_toggle_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#DDDDDD"/>
+    <corners android:radius="8dp"/>
+</shape>

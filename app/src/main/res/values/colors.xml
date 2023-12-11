@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD5</color>
+    <color name="colorPrimaryDark">#00BCD5</color>
+    <color name="sortreeBlue">#00BCD5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorEnergized">#ffc900</color>
+    <color name="colorAssertive">#ef473a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#afb1b6</color>
+    <color name="deepblue">#0000ff</color>
+    <color name="mode_indicator_color">#FF0000</color>
+    <color name="transparent_primary">#00000000</color>
+
+
+
+    <!-- Global colors -->
+    <color name="textColorPrimary">#3a414d</color>
+    <color name="textColorLight">#6f7c92</color>
+
+    <!-- Login -->
+    <color name="colorButton">#774df2</color>
+
+    <!-- Open Chat -->
+    <color name="openChatText">#47505d</color>
+    <color name="openChatNicknameOther">#3a414d</color>
+    <color name="openChatNicknameMe">#00BCD4</color>
+
+    <!-- Group Chat -->
+    <color name="groupChatBubbleMe">#774df2</color>
+    <color name="groupChatTextMe">#ffffff</color>
+    <color name="groupChatBubbleOther">#eef1f6</color>
+    <color name="groupChatTextOther">#000000</color>
+
+    <color name="groupChatReadReceiptMe">#1fcc94</color>
+    <color name="groupChatReadReceiptOther">#00BCD4</color>
+
+    <color name="groupChatAdminBackground">#e0fcff</color>
+    <color name="groupChatAdminText">#39474e</color>
+
+    <color name="groupChatDateText">#ffffff</color>
+    <color name="groupChatDateBackground">#C0C0C0</color>
+
+    <!-- Group Channel List -->
+    <color name="groupChannelUnreadCountBackground">#7d62df</color>
+    <color name="groupChannelUnreadCountText">#ffffff</color>
+
+    <!-- Selector -->
+    <color name="btn_create">#ffffff</color>
+    <color name="btn_create_disabled">#c1acff</color>
+    <color name="btn_edit">#ffffff</color>
+    <color name="btn_edit_disabled">#c1acff</color>
+    <color name="btn_send">#774df2</color>
+    <color name="btn_send_disabled">#8e8e8e</color>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    xmlns:algolia="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/mylist">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/friend_icon2"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            app:civ_border_width="6dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="#c42f92"/>
+
+
+        <TextView
+            android:id="@+id/Itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/friend_icon2"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/cancel_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Itemname"
+            />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/add_friend"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/add_friend_button"/>
+
+</RelativeLayout>

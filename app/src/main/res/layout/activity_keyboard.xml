@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable Emoji Database -->
+    <ScrollView
+        android:id="@+id/emoji_box_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@id/keyboard_layout">
+
+        <GridLayout
+            android:id="@+id/emoji_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="4dp">
+
+            <!-- Dynamic Emoji Views will be added here in your Java/Kotlin code -->
+
+        </GridLayout>
+    </ScrollView>
+
+    <!-- Emoji Keyboard Layout -->
+    <GridLayout
+        android:id="@+id/keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:columnCount="4">
+
+        <!-- Dynamic Emoji Keyboard keys will be added here in your Java/Kotlin code -->
+
+    </GridLayout>
+
+</RelativeLayout>

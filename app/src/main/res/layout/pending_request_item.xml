@@ -1,0 +1,43 @@
+<!-- pending_request_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/profile_placeholder"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:text="accept"
+        android:layout_marginStart="25dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/add_friend_icon_final2" />
+
+    <Button
+        android:id="@+id/deny_button"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/red_square_close_x_button_icon_transparent_background"
+        android:text="deny"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

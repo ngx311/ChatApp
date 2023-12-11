@@ -1,0 +1,121 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="17dp"
+    android:layout_marginBottom="17dp"
+    app:cardCornerRadius="0dp"
+    tools:layout_height="wrap_content"
+    android:id="@+id/simple_list_item_1"
+    android:layout_marginStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/picture_username"
+            android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="#30df3b"
+                app:civ_border_width="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernameTextView"
+                android:layout_below="@+id/profile_picture"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="User Name"
+                android:textSize="17dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/relative_friend_request"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/picture_username"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_addfriend"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/friends" />
+
+                <TextView
+                    android:id="@+id/send_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_addfriend"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Accept"
+                    android:layout_marginTop="4dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp">
+
+                <ImageView
+                    android:id="@+id/image_denyfriend"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/red_square_close_x_button_icon_transparent_background" />
+
+                <TextView
+                    android:id="@+id/deny_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_denyfriend"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Deny"
+                    android:layout_marginTop="6dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

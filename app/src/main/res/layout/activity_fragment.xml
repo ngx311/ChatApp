@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageButton
+            android:id="@+id/addFriendHome"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="17dp"
+            android:background="@drawable/add_friend_icon_final2" />
+
+        <ImageButton
+            android:id="@+id/btnfriends"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_toEndOf="@id/addFriendHome"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/friends" />
+
+        <ImageButton
+            android:id="@+id/btnlogo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/emoji_logo" />
+
+        <ImageButton
+            android:id="@+id/btnkeyboard"
+            android:layout_width="36dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/addStory"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/keyboard_icon_final" />
+
+        <ImageButton
+            android:id="@+id/addStory"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/button_add_story_large" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

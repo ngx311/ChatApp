@@ -1,0 +1,5 @@
+<!-- timer_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CCCCCC"/>
+    <corners android:radius="8dp"/>
+</shape>
